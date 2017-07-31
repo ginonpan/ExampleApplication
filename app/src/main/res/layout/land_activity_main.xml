@@ -2,13 +2,20 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
-    android:id="@+id/linerLayout"
+    android:id="@+id/linerLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false">
     <fragment
         android:name="com.example.exampleapplication.ListFragment"
         android:tag="listFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <fragment
+        android:name="com.example.exampleapplication.ContentFragment"
+        android:tag="contentFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
