@@ -43,9 +43,9 @@ public class ListFragment extends Fragment
 
         // データ初期化
         if(dataList.size() == 0){
-            dataList.add("Foo");
-            dataList.add("Bar");
-            dataList.add("Baz");
+            dataList.add("Test");
+            dataList.add("あいうえお");
+            dataList.add("アアアア");
         }
 
         // アダプターの作成と設定
