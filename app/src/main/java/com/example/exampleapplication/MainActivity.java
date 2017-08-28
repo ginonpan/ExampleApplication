@@ -27,6 +27,9 @@ public class MainActivity extends Activity
                     s,
                     Toast.LENGTH_SHORT)
                     .show();
+            if (s == "FINISH"){
+                finish();
+            }
         }
         else{
             contentFragment.setText(s);

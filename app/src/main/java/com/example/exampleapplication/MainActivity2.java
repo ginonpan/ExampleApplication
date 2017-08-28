@@ -1,5 +1,6 @@
 package com.example.exampleapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -97,13 +98,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     public void selfDestruct(View view) {
         switch (view.getId()) {
             case R.id.button_4:
-                if (flag) {
-                    textView.setText("テスト");
-                    flag = false;
-                } else {
-                    textView.setText("TEST");
-                    flag = true;
-                }
+                Intent intent = new Intent(getApplication(), MainActivity.class);
+                startActivity(intent);
                 break;
         }
     }

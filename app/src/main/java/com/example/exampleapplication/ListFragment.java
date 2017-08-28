@@ -45,7 +45,7 @@ public class ListFragment extends Fragment
         if(dataList.size() == 0){
             dataList.add("Test");
             dataList.add("あいうえお");
-            dataList.add("アアアア");
+            dataList.add("FINISH");
         }
 
         // アダプターの作成と設定
