@@ -83,13 +83,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.button_3:
-                    if (flag) {
-                        textView.setText("AAA");
-                        flag = false;
-                    } else {
-                        textView.setText("あああ");
-                        flag = true;
-                    }
+                    Intent intent = new Intent(getApplication(), MainActivity.class);
+                    startActivity(intent);
                     break;
             }
         }
@@ -98,7 +93,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     public void selfDestruct(View view) {
         switch (view.getId()) {
             case R.id.button_4:
-                Intent intent = new Intent(getApplication(), MainActivity.class);
+                Intent intent = new Intent(getApplication(), MainActivity3.class);
                 startActivity(intent);
                 break;
         }
