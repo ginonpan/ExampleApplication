@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/text_view"
-        android:text="Text Button Click"
+        android:text="メニュー"
         android:textColor="#000"
         android:textSize="30sp"
         android:layout_margin="10dp"
@@ -36,14 +36,14 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="button 2" />
+        android:text="おみくじ" />
 
     <Button
         android:id="@+id/button_3"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="button_3" />
+        android:text="カウンター" />
 
     <Button
         android:id="@+id/button_4"
@@ -51,5 +51,5 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="button_4" />
+        android:text="トースト" />
 </LinearLayout>
