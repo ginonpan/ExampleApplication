@@ -66,14 +66,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     public void onClick(View view){
         switch (view.getId()) {
             case R.id.button_2:
-                if (flag) {
-                    textView.setText("off");
-                    flag = false;
-                }
-                else {
-                    textView.setText("on");
-                    flag = true;
-                }
+                Intent intent = new Intent(getApplication(), MainActivity4.class);
+                startActivity(intent);
                 break;
         }
     }

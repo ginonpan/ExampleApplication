@@ -3,8 +3,6 @@ package com.example.exampleapplication;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,11 +19,11 @@ public class MainActivity3 extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_3);
 
-        // 追加：画面のアイテムと紐付け
+        //画面のアイテムと紐付け
         counter_text = (TextView)findViewById(R.id.text_view2);
         push_btn = (Button)findViewById(R.id.button);
 
-        // 追加：クリック
+        //クリックされたら加算
         push_btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

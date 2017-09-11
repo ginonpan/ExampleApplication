@@ -24,6 +24,10 @@ package="com.example.exampleapplication">
         android:name=".MainActivity3"
         android:label="@string/app_name" >
     </activity>
+    <activity
+        android:name=".MainActivity4"
+        android:label="@string/app_name" >
+    </activity>
 </application>
 
 </manifest>
