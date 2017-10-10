@@ -21,9 +21,9 @@ public class Quiz implements Serializable
 
     private static Quiz[] quizzes = new Quiz[1]; //クイズ集
 
-    // 問題の登録(ここでは1問のみ)
+    // 問題の登録
     public static void init() {
-        quizzes[0] = new Quiz(0, "第1問", R.drawable.france, new String[]{"イタリア", "フランス", "ロシア", "オランダ"}, 1);
+        quizzes[0] = new Quiz(0, "第1問", R.drawable.sakura, new String[]{"桃", "紅葉", "桜", "椿"}, 1);
     }
 
     // 問題を取得する

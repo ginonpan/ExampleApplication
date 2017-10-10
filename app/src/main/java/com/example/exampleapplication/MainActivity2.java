@@ -49,17 +49,12 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
-                //TODO クイズへ遷移
                 case R.id.button_1:
-                    if (flag) {
-                        textView.setText("flase");
-                        flag = false;
-                    }
-                    else {
-                        textView.setText("true");
-                        flag = true;
-                    }
-                    break;
+                    Quiz.init();
+                    Intent intent = new Intent(getApplication(), QuizActivity.class);
+                    intent.putExtra("Quiz", Quiz.getQuiz(0));
+                    startActivity(intent);
+                break;
             }
         }
     };
