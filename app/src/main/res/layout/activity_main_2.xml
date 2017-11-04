@@ -43,7 +43,7 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="カウンター" />
+        android:text="トースト" />
 
     <Button
         android:id="@+id/button_4"
@@ -51,5 +51,5 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="トースト" />
+        android:text="カウンター" />
 </LinearLayout>
