@@ -14,63 +14,83 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="第1問"
         android:id="@+id/q_string" />
-    1
+
     <ImageView
-        android:id="@+id/flag_image"
         android:layout_width="fill_parent"
-        android:layout_height="250dp"
+        android:layout_height="270dp"
+        android:id="@+id/flag_image"
+        android:src="@drawable/sakura"
         android:adjustViewBounds="true"
         android:background="@android:color/black"
-        android:padding="1dp"
-        android:src="@drawable/sakura" />
+        android:padding="1dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Q.これは何の木でしょうか？"
+        android:text="これは何の木でしょうか？"
         android:padding="5dp" />
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="桃"
                 android:id="@+id/button1"
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                android:text="桃" />
+                android:layout_weight="1"
+                android:onClick="answer" />
 
             <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="紅葉"
                 android:id="@+id/button2"
-                android:layout_width="180dp"
-                android:layout_height="match_parent"
-                android:text="紅葉" />
+                android:layout_weight="1"
+                android:onClick="answer" />
         </TableRow>
-        />
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="桜"
                 android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="桜" />
+                android:layout_weight="1"
+                android:onClick="answer" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="椿" />
+                android:text="椿"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:onClick="answer" />
         </TableRow>
-
     </TableLayout>
 
-</LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/result"
+        android:textAlignment="center" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="次の問題へ"
+        android:id="@+id/next"
+        android:visibility="invisible"
+        android:onClick="next" />
+
+</LinearLayout>
