@@ -65,17 +65,23 @@ public class QuizActivity extends AppCompatActivity
                     next.setVisibility(View.VISIBLE);
                 } else {
                     result.setText("不正解");
+                    next.setText("戻る");
+                    next.setVisibility(View.VISIBLE);
                 }
             }
         }
     }
 
     public void next(View view){
-        quiz = Quiz.getQuiz(quiz.quiz_num + 1);
-        if (quiz != null) {
-            show();
-        } else {
+        if(result.getText() == "不正解") {
             finish();
+        } else {
+            quiz = Quiz.getQuiz(quiz.quiz_num + 1);
+            if (quiz != null) {
+                show();
+            } else {
+                finish();
+            }
         }
     }
 }
