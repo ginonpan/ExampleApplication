@@ -48,6 +48,7 @@ public class QuizActivity extends AppCompatActivity
             tv_num.setText(quiz.q_string);
             imageView.setImageResource(quiz.image);
             for (int i = 0; i < buttons.length; i++) {
+                buttons[i].setEnabled(true);
                 buttons[i].setText(quiz.choices[i]);
             }
             result.setText("");
@@ -57,13 +58,13 @@ public class QuizActivity extends AppCompatActivity
 
     public void answer(View view) {
         for (int i = 0; i < buttons.length; i++) {
+            buttons[i].setEnabled(false);
             if (view.getId() == buttons[i].getId()) {
                 if (i == quiz.answer_index) {
                     result.setText("正解!");
                     next.setVisibility(View.VISIBLE);
                 } else {
                     result.setText("不正解");
-                    finish();
                 }
             }
         }
