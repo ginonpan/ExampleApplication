@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="これは何の木でしょうか？"
+        android:text="正解はどれでしょう？"
         android:padding="5dp" />
 
     <TableLayout
